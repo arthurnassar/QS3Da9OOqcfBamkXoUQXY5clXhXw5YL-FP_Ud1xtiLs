@@ -20,6 +20,8 @@
 
 header {
     font-family: 'Popins', sans-serif;
+    position: fixed;
+    width: 100%;
 }
 
 nav {
@@ -106,6 +108,11 @@ nav {
     margin-right: 35px;
 }
 
+#login-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 #login-container img {
     width: 24px;
     height: 24px;
@@ -119,6 +126,11 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 6px;
+}
+
+#cart-icon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #shopping-cart-icon-container {
