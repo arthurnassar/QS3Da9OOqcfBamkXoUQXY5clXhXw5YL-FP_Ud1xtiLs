@@ -122,14 +122,6 @@ body {
     align-items: center;
     padding: 120px 53px 51px 51px;
     text-align: center;
-    transition: all 1s ease;
-}
-
-.register-popup--visible {
-    left: 0px;
-    transition: all 1s ease;
-}
-.register-popup--hidden {
     left: 864px;
     transition: all 1s ease;
 }

@@ -77,14 +77,15 @@ class MyRegisterPopup extends HTMLElement {
 customElements.define('my-register-popup', MyRegisterPopup);
 
 let loginPopupState = false;
+let registerPopupState = false;
 let loginButton = document.getElementById("login-container");
+let loginAndRegisterPopupContainer = document.getElementById("login-register-popup-container");
 
 
 
 // functions
 // Funcao para abrir a tela de login fechar a tela de login INICIO
 function openLoginContainer() {
-    let loginAndRegisterPopupContainer = document.getElementById("login-register-popup-container");
     if (loginPopupState == false) {
         loginAndRegisterPopupContainer.innerHTML = "<my-login-popup><my-login-popup>"
 
@@ -97,6 +98,8 @@ function openLoginContainer() {
         let xButton = document.getElementById("login-popup-x-icon");
         xButton.addEventListener("click", closeLoginContainer);
 
+        let registerButton = document.getElementById("login-popup-register-button");
+        registerButton.addEventListener("click", openRegisterContainer);
     }
 
     else {
@@ -124,7 +127,7 @@ function closeLoginContainer() {
 
         loginPopup.style.left = "432px";
 
-        setTimeout(() => { loginAndRegisterPopupContainer.innerHTML = "" }, 1000);
+        setTimeout(() => { loginAndRegisterPopupContainer.innerHTML = "" }, 500);
 
         loginButton.addEventListener("click", openLoginContainer);
 
@@ -135,4 +138,39 @@ function closeLoginContainer() {
 loginButton.addEventListener("click", openLoginContainer);
 // Fim da funcao de abrir e fechar popup de login
 
+
+// Funcao de fechar a tela de login e abrir a tela de cadastro
+function openRegisterContainer() {
+    closeLoginContainer();
+
+    setTimeout(() => {
+        loginAndRegisterPopupContainer.innerHTML = "<my-register-popup><my-register-popup>"
+
+        let registerPopup = document.getElementById("register-popup");
+    
+        setTimeout(() => { registerPopup.style.left = "0" }, 500);
+    
+        registerPopupState = true;
+    
+        let xButton = document.getElementById("register-popup-x-icon");
+        xButton.addEventListener("click", closeRegisterContainer);
+        
+    }, 500);
+
+}
+
+function closeRegisterContainer() {
+
+    if (registerPopupState == true) {
+        let registerPopup = document.getElementById("register-popup");
+
+        registerPopup.style.left = "864px";
+
+        setTimeout(() => { loginAndRegisterPopupContainer.innerHTML = "" }, 500);
+
+        loginButton.addEventListener("click", openLoginContainer);
+
+        loginPopupState = false;
+    }
+}
 
