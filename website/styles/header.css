@@ -1,0 +1,156 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Colors */
+:root {
+    --light-purple: #4E49B9;
+    --dark-purple: #3B3790;
+    --store-status-open: #0AAB37;
+    --store-status-closed: #ff0000;
+    --store-status-button: #4843B3;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Popins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: var(--light-purple);
+}
+
+/* Beggining of Search Input Style */
+#search-bar-nav {
+    width: 24.323%;
+    position: relative;
+    align-items: center;
+}
+
+#search-bar-nav input {
+    height: 44px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 38px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+#search-btn {
+    position: absolute;
+    padding: 14px 8px 14px 14px;
+}
+
+/* End of Search Input Style */
+
+
+/* Beggining of Icons Style */
+#icons-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+#store-status {
+    margin-right: 48.5px;
+    padding: 4px 8px 4px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 42px;
+    background-color: var(--store-status-button);
+    font-weight: 400;
+
+}
+
+/* Class when store is closed */
+.store-status--closed::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--store-status-closed);
+    margin: 8.5px 8px;
+}
+
+/* Class when store is open */
+.store-status--open::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--store-status-open);
+    margin: 8.5px 8px;
+}
+
+/* Enter button */
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-right: 35px;
+}
+
+#login-container img {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Cart Button */
+#cart-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+#shopping-cart-icon-container {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+#shopping-cart-item-quantity-container {
+    font-weight: 400;
+    font-size: 8px;
+    box-sizing: content-box;
+    width: 12px;
+    height: 12px; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(180deg, #F74F4F 0%, #DF3232 100%);
+    line-height: 12px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0px 1px 0px 0px;
+   
+}
+
+#nav-underline {
+    width: 100%;
+    height: 6px;
+    background-color: var(--dark-purple);
+}
+
+
+
+
+
