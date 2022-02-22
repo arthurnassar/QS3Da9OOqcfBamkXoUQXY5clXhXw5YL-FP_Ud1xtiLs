@@ -168,7 +168,7 @@ function clientLoggedVerify() {
         customElements.define('my-header', MyHeader);
         document.getElementById("nav-underline-nome-usuario").innerHTML = "Olá, " + usuario[0].nome;
         document.getElementById("nav-underline-logout").addEventListener("click", () => {
-            clientLogged = false;
+            localStorage()
             document.location.reload(true);
             // Quando estiver utilizando um database vai funcionar
         })
