@@ -109,7 +109,7 @@ function openLoginContainer() {
         loginPopup.style.left = "432px";
 
         setTimeout(() => { loginAndRegisterPopupContainer.innerHTML = "" }, 500);
-
+        let loginButton = document.getElementById("login-container");
         loginButton.addEventListener("click", openLoginContainer);
 
         loginPopupState = false;
@@ -128,14 +128,14 @@ function closeLoginContainer() {
         loginPopup.style.left = "432px";
 
         setTimeout(() => { loginAndRegisterPopupContainer.innerHTML = "" }, 500);
-
+        let loginButton = document.getElementById("login-container")
         loginButton.addEventListener("click", openLoginContainer);
 
         loginPopupState = false;
     }
 }
 
-loginButton.addEventListener("click", openLoginContainer);
+
 // Fim da funcao de abrir e fechar popup de login
 
 
@@ -147,14 +147,14 @@ function openRegisterContainer() {
         loginAndRegisterPopupContainer.innerHTML = "<my-register-popup><my-register-popup>"
 
         let registerPopup = document.getElementById("register-popup");
-    
+
         setTimeout(() => { registerPopup.style.left = "0" }, 500);
-    
+
         registerPopupState = true;
-    
+
         let xButton = document.getElementById("register-popup-x-icon");
         xButton.addEventListener("click", closeRegisterContainer);
-        
+
     }, 500);
 
 }

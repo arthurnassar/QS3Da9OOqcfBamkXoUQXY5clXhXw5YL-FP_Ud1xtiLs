@@ -55,6 +55,22 @@ nav {
     padding: 14px 8px 14px 14px;
 }
 
+#search-bar-nav-logged-in {
+    width: 30.4038%;
+    position: relative;
+    align-items: center;
+}
+
+#search-bar-nav-logged-in input {
+    height: 44px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 38px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
 /* End of Search Input Style */
 
 
@@ -120,6 +136,47 @@ nav {
     font-weight: 500;
 }
 
+#perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-right: 35px;
+}
+
+#perfil-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#perfil-container img {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+#favorites-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-right: 35px;
+}
+
+#favorites-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#favorites-container img {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
 /* Cart Button */
 #cart-icon {
     display: flex;
@@ -144,7 +201,7 @@ nav {
     font-size: 8px;
     box-sizing: content-box;
     width: 12px;
-    height: 12px; 
+    height: 12px;
     position: absolute;
     right: 0;
     top: 0;
@@ -153,7 +210,7 @@ nav {
     border-radius: 50%;
     text-align: center;
     padding: 0px 1px 0px 0px;
-   
+
 }
 
 #nav-underline {
@@ -162,7 +219,28 @@ nav {
     background-color: var(--dark-purple);
 }
 
+#nav-underline-logged-in {
+    width: 100%;
+    height: 31px;
+    background-color: var(--dark-purple);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 121px;
+}
 
+#nav-underline-nome-usuario {
+    color: white;
+    line-height: 21px;
+    font-size: 14px;
+    margin: 5px 14px 5px 0px;
+}
 
+#nav-underline-logout {
+    color: #A09ED8;
+}
 
-
+#nav-underline-logout:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
