@@ -1,0 +1,190 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Colors */
+:root {
+    --text-color: #000000;
+    --button-color: #4E49B9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* LOGIN POPUP */
+/* Essa popup tem estado inicial escondido com a classe login-popup--hidden */
+
+#login-popup {
+    width: 432px;
+    height: calc(100% - 86px);
+    float: right;
+    padding: 120px 38px 0px 39px;
+    text-align: center;
+    position: relative;
+    top: 86px;
+    left: 432px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+#login-popup-x-icon {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+#login-popup-x-icon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#login-popup-title {
+    line-height: 33px;
+    margin: 33.98px 0px 10px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.login-popup-text-present {
+    font-size: 14px;
+    opacity: 50%;
+}
+
+#login-popup-login-button {
+    margin: 62px 14px 14px 13px;
+}
+
+#login-popup-text-or {
+    opacity: 70%;
+}
+
+#login-popup-register-button {
+    margin: 14px 14px 48px 13px;
+}
+
+#login-popup-login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+#login-popup-login-button a:active {
+    color: white;
+}
+
+
+.popup-button {
+    background-color: var(--button-color);
+    color: white;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 0px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.popup-button:hover {
+    transform: scale(1.05);
+}
+
+#login-popup-text-socials {
+    opacity: 80%;
+}
+
+#login-popup-social-media-icons-container {
+    display: flex;
+    gap: 45.33px 36px;
+    align-items: center;
+    margin-top: 17.67px;
+}
+
+/* REGISTER POPUP */
+/* Essa popup tem estado inicial escondido com a classe register-popup--hidden */
+
+#register-popup {
+    width: 432px;
+    height: calc(100% - 86px);
+    float: right;
+    position: relative;
+    top: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 53px 51px 51px;
+    text-align: center;
+    left: 864px;
+    transition: all 1s ease;
+}
+
+#register-popup-x-icon {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+#register-popup-title {
+    line-height: 33px;
+    margin: 33.98px 0px 34px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#register-popup-inform-name {
+    margin-left: 8px;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+#register-popup-inform-phone {
+    margin-left: 8px;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 3px;
+}
+
+#register-popup input {
+    width: 100%;
+    padding: 14px 0px 14px 14px;
+    border-radius: 8px;
+    border: 1.5px solid var(--button-color);
+    margin-bottom: 20px;
+}
+
+#register-popup-service-and-politcs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 50%;  
+}
+
+#register-popup-service-and-politics-text a:active {
+    color: black;
+}
+
+#register-popup-register-button {
+    margin: 34px 14px 14px 13px;
+}
+
+.register-popup-links {
+    color: black;
+}
+
+.register-popup-links:active {
+    color: black;
+}

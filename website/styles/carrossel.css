@@ -1,0 +1,5 @@
+.carrossel-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; 
+}

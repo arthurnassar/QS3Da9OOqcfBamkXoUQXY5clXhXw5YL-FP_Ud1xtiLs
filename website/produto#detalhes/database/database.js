@@ -1,4 +1,4 @@
-let clientLogged = true;
+let clientLogged = false;
 
 let usuario = [{
     user: "admin",
