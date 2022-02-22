@@ -170,9 +170,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    opacity: 50%;
+    opacity: 50%;  
+}
+
+#register-popup-service-and-politics-text a:active {
+    color: black;
 }
 
 #register-popup-register-button {
     margin: 34px 14px 14px 13px;
+}
+
+.register-popup-links {
+    color: black;
+}
+
+.register-popup-links:active {
+    color: black;
 }

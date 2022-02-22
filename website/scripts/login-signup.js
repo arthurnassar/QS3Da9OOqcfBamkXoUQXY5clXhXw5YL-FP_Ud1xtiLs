@@ -60,10 +60,10 @@ class MyRegisterPopup extends HTMLElement {
             
             <p>Ao prosseguir com o cadastro você concorda</p>
            
-            <p>com nossos <a href="#termosdeserviço">termos de serviço</a> e <a href="#politicadeprivacidade">política
+            <p>com nossos <a class="register-popup-links" href="#termosdeserviço">termos de serviço</a> e <a class="register-popup-links" href="#politicadeprivacidade">política
                     de</a></p>
            
-            <p><a href="#politicadeprivacidade">privacidade</a>.</p>
+            <p><a class="register-popup-links" href="#politicadeprivacidade">privacidade</a>.</p>
        
         </div>
         
