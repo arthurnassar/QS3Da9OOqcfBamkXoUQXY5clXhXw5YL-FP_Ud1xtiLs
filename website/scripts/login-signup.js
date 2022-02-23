@@ -136,20 +136,63 @@ let loginButton = document.getElementById("login-container");
 let loginAndRegisterPopupContainer = document.getElementById("login-register-popup-container");
 let cartItemQuantity = 0;
 let cartItemQuantityText = document.getElementById("add-to-cart-popup-item-quantity-counter");
+let containerTotalHeight = document.getElementsByClassName("container-wrapper")
 
 
 
 // functions
-// FUNCAO PARA CARREGAR
+// FUNÇÃO PARA EXPANDIR O CONTAINER
+let cardOffsetHeight = document.querySelectorAll(".item-card")[0].offsetHeight;
+let containerHeight = cardOffsetHeight;
+let destaquesContainer = document.getElementById("destaques-container");
+let promocoesContainer = document.getElementById("promocoes-container");
+let cestaBasicaContainer = document.getElementById("cesta-basica-container");
+let verao2022Container = document.getElementById("verao-2022-container");
+let seeMoreButtonTag = document.getElementsByClassName(".see-more-button");
+let containerWrapper = document.getElementsByClassName(".container-wrapper");
+let seeLessButton = document.getElementsByClassName(".see-more-button");
+
+function expandirContainer(containerid, itemid, newname) {
+    console.log(itemid)
+    console.log(newname)
+    if (containerHeight < containerTotalHeight[containerid].offsetHeight) {
+        containerHeight += cardOffsetHeight;
+        itemid.style.height = containerHeight + "px";
+        console.log(containerTotalHeight[containerid].offsetHeight);
+        console.log(containerHeight)
+
+        if (containerHeight == containerTotalHeight[containerid].offsetHeight) {
+            seeMoreButton[containerid].innerHTML = "ver menos -"
+            seeMoreButton[containerid].className = "see-less-button"
+            seeMoreButton[containerid].setAttribute("onclick", "diminuirContainer(" + containerid + ", " + newname + ", '" + newname + "')");
+            console.log(seeMoreButton[containerid])
+        }
+
+    }
+}
+
+// FUNCAO PARA DIMINUIR O CONTAINER
+function diminuirContainer(containerid, itemid, newname) {
+
+    containerHeight = cardOffsetHeight;
+    itemid.style.height = containerHeight + "px";
+    console.log(containerTotalHeight[containerid].offsetHeight);
+    console.log(containerHeight)
+    seeMoreButton[containerid].innerHTML = "ver mais +"
+    seeMoreButton[containerid].className = "see-more-button"
+    seeMoreButton[containerid].setAttribute("onclick", "expandirContainer(" + containerid + ", " + newname + ", '" + newname + "')");
+}
+
+// FUNCAO PARA CARREGAR OS ITENS DO CARRINHO
 function updateShoppingCartCounter() {
     let shoppingCartCounter = document.getElementById("shopping-cart-item-quantity-container");
     let shoppingCartShowNumber = window.localStorage.getItem("shoppingCartNumber");
     shoppingCartCounter.innerHTML = shoppingCartShowNumber;
 
-    
-} 
+
+}
 // FUNCAO PARA MANDAR OS ITENS PARA O CARRINHO
-function sendItemToCart() { 
+function sendItemToCart() {
     let counterNumber = document.getElementById("add-to-cart-popup-item-quantity-counter");
     let shoppingCartShowNumber = counterNumber.innerHTML;
     window.localStorage.setItem("shoppingCartNumber", shoppingCartShowNumber);
@@ -157,11 +200,11 @@ function sendItemToCart() {
     addedToCart.style.width = "60%";
     setTimeout(() => {
         addedToCart.style.width = "0%";
-    }, 2000);  
+    }, 2000);
     setTimeout(() => {
         closeAddToCartContainer();
         updateShoppingCartCounter();
-    }, 3000); 
+    }, 3000);
     cartItemQuantity = 0;
 }
 // FUNCAO PARA AUMENTAR A QUANTIDADE DE ITENS NO CARRINHO
@@ -197,7 +240,7 @@ function openAddToCartContainer() {
         let addToCartPopup = document.getElementById("add-to-cart-popup");
 
         setTimeout(() => { addToCartPopup.style.right = "0" }, 500);
-        
+
         addToCartPopupState = true;
     }
 }

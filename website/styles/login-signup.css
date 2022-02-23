@@ -120,6 +120,7 @@
     right: -432px;
     background-color: white;
     transition: all 1s ease;
+    z-index: 1000;
 }
 
 #register-popup-x-icon {
