@@ -90,7 +90,11 @@ function clientLoggedVerify() {
         customElements.define('my-header', MyHeader);
         let loginButton = document.getElementById("login-container");
         setTimeout(() => { loginButton.addEventListener("click", openLoginContainer) }, 100);
-
+        setTimeout(() => {
+            let shoppingCartCounter = 0;
+            let shoppingCartShowNumber = document.getElementById("shopping-cart-item-quantity-container");
+            shoppingCartShowNumber.innerHTML = shoppingCartCounter;
+        }, 100);
 
     } else {
         class MyHeader extends HTMLElement {
@@ -168,9 +172,11 @@ function clientLoggedVerify() {
         customElements.define('my-header', MyHeader);
         document.getElementById("nav-underline-nome-usuario").innerHTML = "Olá, " + usuario[0].nome;
         document.getElementById("nav-underline-logout").addEventListener("click", () => {
-            localStorage()
+            clientLogged = false;
             document.location.reload(true);
             // Quando estiver utilizando um database vai funcionar
+               
+            
         })
 
     }
