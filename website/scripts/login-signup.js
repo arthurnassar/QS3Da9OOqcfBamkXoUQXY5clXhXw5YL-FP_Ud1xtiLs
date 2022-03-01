@@ -67,7 +67,7 @@ class MyRegisterPopup extends HTMLElement {
        
         </div>
         
-        <button onclick="window.location.replace('./cadastro.html');" id="register-popup-register-button" class="popup-button">Cadastre-se</button>
+        <button onclick="window.location.replace('./confirmacao.html');" id="register-popup-register-button" class="popup-button">Cadastre-se</button>
     
     </section>
         `
@@ -232,6 +232,37 @@ function quantityMinus() {
         }
     }
 }
+
+document.getElementsByClassName('add-to-cart-counter-button').forEach(element => {
+    let cartItemQuantity[element] = 0;
+});
+// FUNCAO PARA AUMENTAR A QUANTIDADE DE ITENS NO CARRINHO
+function cartQuantityPlus(i) {
+    let cartItemQuantityText = document.getElementsByClassName("add-to-cart-item-quantity-counter");
+    if (cartItemQuantity >= 0 && cartItemQuantity <= 8) {
+        cartItemQuantity++
+        cartItemQuantityText[i].innerHTML = "0" + cartItemQuantity;
+    } else {
+        cartItemQuantity++
+        cartItemQuantityText[i].innerHTML = cartItemQuantity;
+    }
+}
+// FUNCAO PARA DIMINUIR A QUANTIDADE DE ITENS NO CARRINHO
+function cartQuantityMinus(i) {
+    let cartItemQuantityText = document.getElementsByClassName("add-to-cart-item-quantity-counter");
+    if (cartItemQuantity > 0) {
+        if (cartItemQuantity > 0 && cartItemQuantity <= 10) {
+            cartItemQuantity--
+            cartItemQuantityText[i].innerHTML = "0" + cartItemQuantity;
+        }
+        else {
+            cartItemQuantity--
+            cartItemQuantityText[i].innerHTML = cartItemQuantity;
+        }
+    }
+}
+
+
 // ABRIR O POPUP DE ADICIONAR ITENS AO CARRINHO
 function openAddToCartContainer() {
     if (addToCartPopupState == false) {

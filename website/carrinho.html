@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eita delivery</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/login-signup.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/carrinho.css">
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div id="login-register-popup-container"></div>
+
+    <main>
+
+        <div class="voltar-container">
+            <p>Voltar</p>
+        </div>
+
+        <div id="carrinho-entrega-container">
+            <div id="carrinho-container">
+                <div id="carrinho-wrapper">
+                    <h2>Carrinho</h2>
+                    <p>X itens</p>
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus(0)">-</button>
+
+                            <p class="add-to-cart-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus(0)">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus()">-</button>
+
+                            <p id="add-to-cart-popup-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus()">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus()">-</button>
+
+                            <p id="add-to-cart-popup-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus()">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus()">-</button>
+
+                            <p id="add-to-cart-popup-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus()">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus()">-</button>
+
+                            <p id="add-to-cart-popup-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus()">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+                <div class="carrinho-item-card">
+                    <div class="img-container">
+                        <img class="product-image" src="./assets/main/item-img.svg" alt="imagem do item">
+                    </div>
+                    <div class="carrinho-item-description">
+                        <p class="product-title1">Nome do item</p>
+                        <p class="product-description1">Descrição do produto</p>
+                        <div class="price-container">
+                            <p class="product-old-price">R$ 30,00</p>
+                            <p class="product-new-price">R$ 30,00</p>
+                        </div>
+                    </div>
+                    <div id="carrinho-counter">
+                        <div id="item-quantity-counter-container2">
+
+                            <button class="add-to-cart-counter-button" onclick="cartQuantityMinus()">-</button>
+
+                            <p id="add-to-cart-popup-item-quantity-counter">00</p><button
+                                class="add-to-cart-counter-button" onclick="cartQuantityPlus()">+</button>
+
+                        </div>
+                    </div>
+                    <img onclick="showDeleteItem()" class="trash-icon" src="./assets/main/trash-icon.svg" alt="icone excluir card">
+                </div>
+
+            </div>
+            <div id="entrega-container">
+                <h2>Entrega</h2>
+                <div id="receber-em-casa">
+                    <img src="./assets/main/fi_truckdeliveryicon.svg" alt="simbolo de entrega">
+                    <p class="entrega-titles">Receber em casa</p>
+                    <input type="radio" name="receiving-method" id="receive-home">
+                </div>
+                <div id="retirar-na-loja">
+                    <img src="./assets/main/fi_packageboxicon.svg" alt="retirar na loja">
+                    <p class="entrega-titles">Retirar na loja</p>
+                    <input type="radio" name="receiving-method" id="pickup-in-the-store">
+                </div>
+                <div id="meu-endereco">
+                    <img src="./assets/main/fi_map-pinlocicon.svg" alt="meu endereco icon">
+                    <div class="entrega-container">
+                        <p class="entrega-titles">Minha casa</p>
+                        <p id="entrega-subtitle">Rua Noel Freire, 586, Baixa Grande Arapiroca, AL - CEP 57300-030</p>
+                    </div>
+                </div>
+                <p id="alter-adress" onclick="showSelectAdress()">alterar endereço</p>
+
+                <div id="total-container">
+                    <p id="total-title">Total</p>
+                    <div id="cupom-desconto" class="padding borderbottom">
+                        <p class="total-text">Cupom de desconto</p>
+                        <p id="inserir-cupom" onclick="showInsertCupom()">Inserir</p>
+                    </div>
+                    <div id="cupom-desconto" class="padding borderbottom">
+                        <p class="total-text">Frete</p>
+                        <p id="text-gratis">gratis</p>
+                    </div>
+                    <div id="cupom-desconto" class="padding">
+                        <p class="total-text">Total do pedido</p>
+                        <p id="total-price">R$ 437,36</p>
+                    </div>
+                </div>
+
+                <div id="pagamento-container">
+                    <h2>Pagamento</h2>
+                    <form action="" method="post">
+                        <input type="text" name="CPF" placeholder="CPF">
+                        <input type="text" placeholder="Data de nascimento" onfocus="(this.type='date')">
+                        <input type="text" placeholder="Nome">
+                        <p id="inform-text">como impresso no cartão</p>
+                        <input type="text" placeholder="CPF">
+                        <input type="text" placeholder="Número do cartão">
+                        <div id="month-cvv-container">
+                            <input type="text" placeholder="MM / AA">
+                            <input type="text" placeholder="CVV">
+                        </div>
+                        <input id="finalizar-pedido" type="submit" value="Finalizar Pedido">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popups-container">
+           
+        </div>
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="./scripts/login-signup.js"></script>
+    <script src="./database/database.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/carrinho.js"></script>
+</body>
+
+</html>

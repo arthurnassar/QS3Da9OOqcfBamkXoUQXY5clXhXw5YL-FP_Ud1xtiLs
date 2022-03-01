@@ -19,36 +19,35 @@
 
     <main>
 
-        <div class="voltar-container">
-            <p>Voltar</p>
-        </div>
+        <div id="cadastro-container">
+            <h1>Completar Cadastro</h1>
 
-        <div id="cadastro-titulo">
-            <p>Informe o código que enviamos</p>
-            <p>para o número</p>
-        </div>
-
-        <p id="whatsapp-number" class="whatsapp-number">(82)99968-6588</p>
-
-        <form action="#">
-            <div>
-                <input onfocus="changeInputColor(0)" class="one-letter-per-box" type="text" maxlength="1"/>
-                <input onfocus="changeInputColor(1)" class="one-letter-per-box" type="text" maxlength="1"/>
-                <input onfocus="changeInputColor(2)" class="one-letter-per-box" type="text" maxlength="1"/>
-                <input onfocus="changeInputColor(3)" class="one-letter-per-box" type="text" maxlength="1"/>
-            </div>
-          </form>
-
-          <p id="reenviar-codigo">Reenviar código</p>
-            
-            <div id="botoes-prox-voltar">
-                <div class="voltar-container">
-                    <p>Voltar</p>
+            <form action="post">
+                <div id="div-wrapper">
+                    <div id="left-div">
+                        <input type="text" placeholder="Nome" name="name">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div id="right-div">
+                        <input type="phone" name="telefone" placeholder="(  ) 0 0000-0000">
+                        <div>
+                            <label for="gender-box"> Sexo</label>
+                            <div id="gender-box">
+                                <div id="male-box">
+                                    <input type="radio" name="gender" value="male">
+                                    <p>Masculino</p>
+                                </div>
+                                <div id="female-box">
+                                    <input type="radio" name="gender" value="female">
+                                    <p>Feminino</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button id="nextButton" class="popup-button nextButton">Cadastre-se</button>
-            </div>
-          
-        </section>
+                    <input onclick="window.location.replace('#');" id="cadastro-save-button" type="submit" value="Salvar e continuar">
+            </form>
+        </div>
 
     </main>
 
