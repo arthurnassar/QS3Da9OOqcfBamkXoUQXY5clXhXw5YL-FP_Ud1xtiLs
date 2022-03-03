@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eita delivery</title>
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/login-signup.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/carrinho.css" />
+    <link rel="stylesheet" href="./styles/statusbar.css" />
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div id="login-register-popup-container"></div>
+
+    <main>
+        <div id="status-pedido-container">
+            <div id="status-container">
+                <h2 id="status-title">Status do Pedido</h2>
+                <p id="status-text">Acompanhe aqui o status do seu pedido</p>
+                <div id="status-wrapper">
+                    <div id="status-bar-container">
+                        <div class="circle" id="circle1"></div>
+                        <div class="circle" id="circle2"></div>
+                        <div class="circle" id="circle3"></div>
+                        <div class="circle" id="circle4"></div>
+                        <div class="circle" id="circle5"></div>
+                        <div class="circle" id="circle6"></div>
+                    </div>
+                    <div id="status-boxes">
+                        <div class="rectangle inactive">
+                            <div class=""></div>
+                            <div class="time"></div>
+                            <span>Pedido entregue</span>
+                        </div>
+                        <div class="rectangle inactive">
+                            <div class=""></div>
+                            <div class="time"></div>
+                            <span>Saiu para entrega</span>
+                        </div>
+                        <div class="rectangle inactive">
+                            <div class=""></div>
+                            <div class="time"></div>
+                            <span>Em produção</span>
+                        </div>
+                        <div class="rectangle oncourse">
+                            <div class="load"></div>
+                            <div class="time">11:18</div>
+                            <span>Pedido recebido</span>
+                        </div>
+                        <div class="rectangle active">
+                            <div class="clock"></div>
+                            <div class="time">11:15</div>
+                            <span>Pagamento aprovado</span>
+                        </div>
+                        <div class="rectangle active">
+                            <div class="clock"></div>
+                            <div class="time">11:10</div>
+                            <span>Pedido realizado</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-pedidos">Ir para meus pedidos</button>
+            </div>
+            <div id="pedido-container">
+                <h2 id="pedido-title">Pedido #986</h2>
+                <div class="black-line"></div>
+                <div id="pedido-page">
+                    <img src="./assets/main/shoppinglady.svg" alt="mulher com um carrinho de compras" />
+                    <div class="pedido-card">
+                        <p class="pedido-title width60">Item</p>
+                        <p class="pedido-title width20 aligncenter">Qtd</p>
+                        <p class="pedido-title width20 alignright">Valor</p>
+                    </div>
+                    <div class="pedido-card border-bottom">
+                        <p class="pedido-item width60">
+                            Cerveja Amstel Puro Malte Pilsen 350ml
+                        </p>
+                        <p class="pedido-item width20 aligncenter">2</p>
+                        <p class="pedido-item width20 alignright">R$ 39,48</p>
+                    </div>
+                    <div class="pedido-card border-bottom">
+                        <p class="pedido-item width60">Cerveja Brahma Chopp Zero 350ml</p>
+                        <p class="pedido-item width20 aligncenter">2</p>
+                        <p class="pedido-item width20 alignright">R$ 34,20</p>
+                    </div>
+                    <div class="pedido-card border-bottom">
+                        <p class="pedido-item width60">Cerveja Heineken Garrafa 600ml</p>
+                        <p class="pedido-item width20 aligncenter">1</p>
+                        <p class="pedido-item width20 alignright">R$ 290,00</p>
+                    </div>
+                    <div class="entrega-card border-bottom pb14 mt55">
+                        <p class="entrega-card-left">Frete</p>
+                        <p class="entrega-card-right bold">grátis</p>
+                    </div>
+                    <div class="entrega-card border-bottom pb16 pt10">
+                        <p class="entrega-card-left">Entrega</p>
+                        <p class="entrega-card-right">R. Noel Freire 432, Baixa grande...</p>
+                    </div>
+                    <div class="entrega-card pb20 pt14">
+                        <p class="entrega-card-left">Pagamento</p>
+                        <p class="entrega-card-right"><b>Cartão/Crédito</b> final 2555</p>
+                    </div>
+                    <div class="dotted-border"></div>
+                    <div class="entrega-card fs16-fw600">
+                        <p class="entrega-total-left">Total</p>
+                        <p class="entrega-total-right">R$ 437,36</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popups-container"></div>
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="./scripts/login-signup.js"></script>
+    <script src="./database/database.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/carrinho.js"></script>
+    <script src="./scripts/statusbar.js"></script>
+</body>
+
+</html>

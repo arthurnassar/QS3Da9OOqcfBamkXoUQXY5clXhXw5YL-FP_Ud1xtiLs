@@ -245,3 +245,42 @@ nav {
     cursor: pointer;
     
 }
+
+#mobile-text {
+    display: none;
+}
+
+@media screen and (max-width: 635px) {
+    #logo-nav {
+        display: none;
+    }
+
+    #icons-nav {
+        display: none;
+    }
+
+    #search-bar-nav {
+        width: 90%;
+        padding-top: 40px;
+        padding-bottom: 14px;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    #nav-underline {
+        height: auto;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 9px 0px 9px 15px;
+    }
+
+    #mobile-text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+    }
+}
