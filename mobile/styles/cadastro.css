@@ -14,6 +14,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .voltar-container {
@@ -42,9 +43,11 @@ main {
 #cadastro-titulo {
     align-self: center;
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 47px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 28px;
 }
 
@@ -53,7 +56,7 @@ main {
     border-radius: 35px;
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 70%;
     font-size: 2.8vh;
     font-weight: 400;
     padding: 8px 13px 8px 16px;
@@ -80,15 +83,18 @@ main {
     margin: 0 0 20px 0;
     align-self: center;
     margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
+
   }
   
   .one-letter-per-box {
-    border: 1px solid #7C7676;
-    height: 60px;
-    width: 60px;
-    border-radius: 8px;
-    margin: 0px 18px 0px 18px;
-    text-align: center;
+    border: 1px solid #7C7676 !important;
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 8px !important;
+    margin: 0px 5px 0px 5px !important;
+    text-align: center !important;
 
 }
 

@@ -18,13 +18,10 @@
 /* Essa popup tem estado inicial escondido com a classe login-popup--hidden */
 
 #login-popup {
-    width: 432px;
-    height: 100%;
-    float: right;
+    width: 100%;
+    height: 100vh;
     padding: 120px 38px 0px 39px;
     text-align: center;
-    position: absolute;
-    right: -432px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,18 +106,17 @@
 /* Essa popup tem estado inicial escondido com a classe register-popup--hidden */
 
 #register-popup {
-    width: 432px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 43px 51px 41px;
+    padding: 80px 16px 51px 16px;
     text-align: center;
-    position: absolute;
-    right: -432px;
     background-color: white;
     transition: all 1s ease;
     z-index: 1000;
+    position: relative;
 }
 
 #register-popup-x-icon {

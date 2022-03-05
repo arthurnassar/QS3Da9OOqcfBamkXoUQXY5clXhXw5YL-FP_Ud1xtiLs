@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eita delivery</title>
+    <link rel="stylesheet" href="./styles/login-signup.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <section id="register-popup" class="register-popup--hidden">
+
+        <img id="register-popup-logo" src="./assets/login-signup/logo.svg" alt="logo da empresa">
+
+        <h2 id="register-popup-title">Cadastro</h2>
+
+        <p id="register-popup-inform-name">Informe seu nome</p>
+
+        <input type="text" placeholder="Informe seu nome completo">
+
+        <div id="register-popup-service-and-politcs-text">
+
+            <p>Ao prosseguir com o cadastro você concorda com nossos <a class="register-popup-links"
+                    href="#termosdeserviço">termos de serviço</a> e <a class="register-popup-links"
+                    href="#politicadeprivacidade">política
+                    de privacidade</a></p>
+
+        </div>
+
+        <div class="backnextbutton">
+            <div class="voltar-container">
+                <p>Voltar</p>
+            </div>
+
+            <button onclick="window.location.replace('./cadastro_02.html');" id="register-popup-register-button"
+                class="popup-button next-btn">Próximo <img style="width: 22px; height: 22px;" src="./assets/main/arrow-right.svg" alt=""></button>
+        </div>
+    </section>
+</body>
+
+</html>

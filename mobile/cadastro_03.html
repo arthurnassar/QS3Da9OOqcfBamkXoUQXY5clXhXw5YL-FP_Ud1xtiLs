@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eita delivery</title>
+    <link rel="stylesheet" href="./styles/login-signup.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+
+</head>
+
+<body>
+    <section id="register-popup" class="register-popup--hidden">
+
+        <img id="register-popup-logo" src="./assets/login-signup/logo.svg" alt="logo da empresa">
+
+        <div id="cadastro-titulo">
+            <p>Informe o código que enviamos </p>
+        </div>
+
+        <div id="whatsapp-number" class="whatsapp-number">
+            <p>(82)99968-6588</p>
+            <div id="whatsapp-number-edit"></div>
+        </div>
+
+        <form action="#">
+            <div>
+                <input onfocus="changeInputColor(0)" class="one-letter-per-box" type="text" maxlength="1" />
+                <input onfocus="changeInputColor(1)" class="one-letter-per-box" type="text" maxlength="1" />
+                <input onfocus="changeInputColor(2)" class="one-letter-per-box" type="text" maxlength="1" />
+                <input onfocus="changeInputColor(3)" class="one-letter-per-box" type="text" maxlength="1" />
+            </div>
+        </form>
+
+        <p id="reenviar-codigo">Reenviar código</p>
+
+        <div class="backnextbutton">
+            <div class="voltar-container">
+                <p>Voltar</p>
+            </div>
+
+            <button onclick="window.location.replace('./completarcadastro.html');" id="register-popup-register-button"
+                class="popup-button next-btn">Próximo <img style="width: 22px; height: 22px;"
+                    src="./assets/main/arrow-right.svg" alt=""></button>
+        </div>
+    </section>
+</body>
+
+</html>
