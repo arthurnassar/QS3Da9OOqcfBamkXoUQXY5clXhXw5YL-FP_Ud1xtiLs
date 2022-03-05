@@ -1,0 +1,151 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 8% 4% 8%;
+}
+
+#tags {
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    width:auto;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+#tags a {
+    padding: 12px 16px;
+}
+
+.voltar-container {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.voltar-container:hover {
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+.voltar-container::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/main/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-list {
+    font-size: 16px;
+    color: #4E49B9;
+    text-decoration: none;
+
+}
+
+.flex {
+    display: flex;
+    gap: 5px;
+    margin-top: 32px;
+}
+
+#container-produto {
+    height: 421px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10%;
+}
+
+#container-produto img {
+ height: 90%;
+}
+
+#img-detalhes-container {
+    height: 100%;
+    border: 1px solid #0000001C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mb24 {
+    margin-bottom: 35px;
+}
+
+.product-detalhes-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.product-detalhes-description {
+    opacity: 60%;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.product-detalhes-price {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.texto-roxo {
+    color: #3B3790;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.produt-detalhes-description {
+    font-size: 14px;
+    opacity: 80%;
+    margin-top: 12px;
+}
+
+#qtd-counter-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+}
+
+#item-quantity-counter-container3 {
+    display: flex;
+}
+
+.detalhes-counter-button {
+    width: 44px;
+    height: 44px;
+    background: #4E49B9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.detalhes-item-quantity-counter {
+    width: 50px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.button {
+    padding: 14px 0px;
+    width: 50%;
+    margin-top: 30px;
+    color: white;
+    background: #4E49B9;
+    border-radius: 8px;
+    border: none;
+}

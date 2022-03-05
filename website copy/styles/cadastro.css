@@ -1,0 +1,207 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 36px 120px 70px 120px;
+    font-family: 'Popins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voltar-container {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.voltar-container:hover {
+    transform: scale(1.006);
+    cursor: pointer;
+}
+
+.voltar-container::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/main/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#cadastro-titulo {
+    align-self: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 47px;
+    margin-bottom: 28px;
+}
+
+.whatsapp-number {
+    background-color: #E8E8EE;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    font-size: 2.8vh;
+    font-weight: 400;
+    padding: 8px 13px 8px 16px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+
+#whatsapp-number-edit {
+    width: 12px;
+    height: 12px;
+    background-image: url(../assets/main/edit.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 11.33px;
+}
+
+#whatsapp-number-edit:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+  
+  form {
+    margin: 0 0 20px 0;
+    align-self: center;
+    margin-bottom: 19px;
+  }
+  
+  .one-letter-per-box {
+    border: 1px solid #7C7676;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    margin: 0px 18px 0px 18px;
+    text-align: center;
+
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color none 0px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: none;
+    outline-width: 1px;
+}
+
+#reenviar-codigo {
+    align-self: center;
+    color: #413DA5;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#reenviar-codigo:hover {
+    transform: scale(1.05);
+    color: #3a37ac;
+}
+
+#botoes-prox-voltar {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.nextButton {
+    padding: 12px 70px;
+}
+
+/* TELA DE CADASTRO */
+#cadastro-container {
+    box-shadow: 0px 12px 22px 0px #00000014;
+    padding: 19px 28px 30px 28px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top;: 57px;
+    width: 80%;
+}
+
+#cadastro-container h1 {
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+#div-wrapper input {
+    background-color: #F2F2F6;
+    border-radius: 8px;
+    padding: 14px;
+    border: none;
+}
+
+#cadastro-container form {
+display: flex;
+flex-direction: column;
+}
+
+#left-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+#right-div {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 100%;
+}
+
+#gender-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 44px;
+}
+
+#male-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#female-box {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#cadastro-save-button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    margin-top: 68px;
+    width: 50%;
+    color: white;
+    background-color: #4E49B9;
+    padding: 14px 0px;
+    border-radius: 8px;
+    border: none;
+}
+
+#div-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+}

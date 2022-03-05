@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eita delivery</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/login-signup.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div id="login-register-popup-container"></div>
+
+    <main>
+
+        <div id="cadastro-container">
+            <h1>Completar Cadastro</h1>
+
+            <form action="post">
+                <div id="div-wrapper">
+                    <div id="left-div">
+                        <input type="text" placeholder="Nome" name="name">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div id="right-div">
+                        <input type="phone" name="telefone" placeholder="(  ) 0 0000-0000">
+                        <div>
+                            <label for="gender-box"> Sexo</label>
+                            <div id="gender-box">
+                                <div id="male-box">
+                                    <input type="radio" name="gender" value="male">
+                                    <p>Masculino</p>
+                                </div>
+                                <div id="female-box">
+                                    <input type="radio" name="gender" value="female">
+                                    <p>Feminino</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <input onclick="window.location.replace('#');" id="cadastro-save-button" type="submit" value="Salvar e continuar">
+            </form>
+        </div>
+
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="./scripts/login-signup.js"></script>
+    <script src="./database/database.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/cadastro.js"></script>
+</body>
+
+</html>
